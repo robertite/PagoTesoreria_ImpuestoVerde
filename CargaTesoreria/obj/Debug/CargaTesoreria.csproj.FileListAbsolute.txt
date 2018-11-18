@@ -1,0 +1,23 @@
+C:\Users\win\AppData\Local\Temporary Projects\CargaTesoreria\bin\Debug\CargaTesoreria.exe.config
+C:\Users\win\AppData\Local\Temporary Projects\CargaTesoreria\bin\Debug\CargaTesoreria.exe
+C:\Users\win\AppData\Local\Temporary Projects\CargaTesoreria\bin\Debug\CargaTesoreria.pdb
+C:\Users\win\AppData\Local\Temporary Projects\CargaTesoreria\obj\Debug\CargaTesoreria.csprojResolveAssemblyReference.cache
+C:\Users\win\AppData\Local\Temporary Projects\CargaTesoreria\obj\Debug\CargaTesoreria.Form1.resources
+C:\Users\win\AppData\Local\Temporary Projects\CargaTesoreria\obj\Debug\CargaTesoreria.Properties.Resources.resources
+C:\Users\win\AppData\Local\Temporary Projects\CargaTesoreria\obj\Debug\CargaTesoreria.csproj.GenerateResource.Cache
+C:\Users\win\AppData\Local\Temporary Projects\CargaTesoreria\obj\Debug\CargaTesoreria.exe
+C:\Users\win\AppData\Local\Temporary Projects\CargaTesoreria\obj\Debug\CargaTesoreria.pdb
+C:\Users\win\Documents\Visual Studio 2015\Projects\CargaTesoreria\CargaTesoreria\obj\Debug\CargaTesoreria.Ingreso.resources
+C:\Users\win\Documents\Visual Studio 2015\Projects\CargaTesoreria\CargaTesoreria\obj\Debug\CargaTesoreria.Login.resources
+C:\Users\win\Documents\Visual Studio 2015\Projects\CargaTesoreria\CargaTesoreria\obj\Debug\CargaTesoreria.Principal.resources
+C:\Users\win\Documents\Visual Studio 2015\Projects\CargaTesoreria\CargaTesoreria\obj\Debug\CargaTesoreria.Properties.Resources.resources
+C:\Users\win\Documents\Visual Studio 2015\Projects\CargaTesoreria\CargaTesoreria\obj\Debug\CargaTesoreria.csproj.GenerateResource.Cache
+C:\Users\win\Documents\Visual Studio 2015\Projects\CargaTesoreria\CargaTesoreria\obj\Debug\CargaTesoreria.exe
+C:\Users\win\Documents\Visual Studio 2015\Projects\CargaTesoreria\CargaTesoreria\obj\Debug\CargaTesoreria.pdb
+C:\Users\win\Documents\Visual Studio 2015\Projects\CargaTesoreria\CargaTesoreria\bin\Debug\CargaTesoreria.exe.config
+C:\Users\win\Documents\Visual Studio 2015\Projects\CargaTesoreria\CargaTesoreria\bin\Debug\CargaTesoreria.exe
+C:\Users\win\Documents\Visual Studio 2015\Projects\CargaTesoreria\CargaTesoreria\bin\Debug\CargaTesoreria.pdb
+C:\Users\win\Documents\Visual Studio 2015\Projects\CargaTesoreria\CargaTesoreria\obj\Debug\CargaTesoreria.csprojResolveAssemblyReference.cache
+C:\Users\win\Documents\Visual Studio 2015\Projects\CargaTesoreria\CargaTesoreria\bin\Debug\CefSharp.xml
+C:\Users\win\Documents\Visual Studio 2015\Projects\CargaTesoreria\CargaTesoreria\bin\Debug\CefSharp.Core.xml
+C:\Users\win\Documents\Visual Studio 2015\Projects\CargaTesoreria\CargaTesoreria\bin\Debug\CefSharp.WinForms.xml
