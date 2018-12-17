@@ -12,9 +12,12 @@ using CefSharp.WinForms;
 
 namespace CargaTesoreria
 {
-    public partial class Ingreso : Form
+    public partial class Ingreso : Form 
     {
         ChromiumWebBrowser browser;
+        IKeyboardHandler IKey;
+
+
         public static Ingreso GetInstance()
         {
 
@@ -77,16 +80,17 @@ namespace CargaTesoreria
                 txtRut.Text = "";
                 return;
             }
-           
-      
+
+ 
             browser.ExecuteScriptAsync("document.getElementById('L03').value = '"+ factura.rut +"';");
             browser.ExecuteScriptAsync("document.getElementById('L003').value = '" + factura.cod_verificador + "';");
-            KeyEvent k = new KeyEvent();
-            k.WindowsKeyCode = 0x0D;
-            k.FocusOnEditableField = true;
-            k.IsSystemKey = false;
-            k.Type = KeyEventType.Char;
-            browser.GetBrowser().GetHost().SendKeyEvent(k);
+
+            //KeyEvent k = new KeyEvent();
+            //k.WindowsKeyCode = 0x0D;
+            //k.FocusOnEditableField = true;
+            //k.IsSystemKey = false;
+            //k.Type = KeyEventType.Char;
+            //browser.GetBrowser().GetHost().SendKeyEvent(k);
 
             browser.ExecuteScriptAsync("document.getElementById('L6').value = '" + factura.direccion + "';");
             browser.ExecuteScriptAsync("document.getElementById('L8').value = '" + factura.comuna + "';");
@@ -97,44 +101,46 @@ namespace CargaTesoreria
             browser.ExecuteScriptAsync("document.getElementById('L22').value = '" + factura.nro_factura.ToString() + "';");
             browser.ExecuteScriptAsync("document.getElementById('L23').value = '" + factura.fecha_emision_docto.ToString("dd-MM-yyyy") + "';");
             browser.ExecuteScriptAsync("document.getElementById('L24').value = '" + factura.tipo_factura + "';");
+         
+            browser.Focused.Equals("L003");
             browser.ExecuteScriptAsync("document.getElementById('L25').value = '" + factura.valor_neto.ToString()+ "';");
             browser.ExecuteScriptAsync("document.getElementById('L26').value = '" + factura.valor_iva.ToString() + "';");
             browser.ExecuteScriptAsync("document.getElementById('L27').value = '" + factura.valor_total + "';");
-            browser.Focus();
 
+        
 
-            //     browser.ExecuteScriptAsync("document.getElementById('Sii').click();");
-
-
-
-            //webBrowser1.Document.GetElementById("L03").SetAttribute("value", factura.rut);
-            //webBrowser1.Document.GetElementById("L003").SetAttribute("value", factura.cod_verificador);
-            //webBrowser1.Document.GetElementById("L003").Focus();
-            //SendKeys.Send("{TAB}");
-            //SendKeys.Flush();
-            //webBrowser1.Document.GetElementById("L6").SetAttribute("value", factura.direccion);
-            //webBrowser1.Document.GetElementById("L8").SetAttribute("value", factura.comuna);
-            //webBrowser1.Document.GetElementById("L28").SetAttribute("value", factura.cod_inf_tec);
-            //webBrowser1.Document.GetElementById("L28").Focus();
-            //SendKeys.Send("{TAB}");
-            //SendKeys.Flush();
-            //webBrowser1.Document.GetElementById("L33").SetAttribute("value", factura.numero_chasis);
-            //webBrowser1.Document.GetElementById("L20").SetAttribute("value", factura.tipo_docto);
-            //webBrowser1.Document.GetElementById("L21").SetAttribute("value", factura.rut_emisor_fac);
-            //webBrowser1.Document.GetElementById("L22").SetAttribute("value", factura.nro_factura.ToString ());
+        //     browser.ExecuteScriptAsync("document.getElementById('Sii').click();");
 
 
 
-            //webBrowser1.Document.GetElementById("L23").SetAttribute("value", factura.fecha_emision_docto.ToString("dd-MM-yyyy"));
+        //webBrowser1.Document.GetElementById("L03").SetAttribute("value", factura.rut);
+        //webBrowser1.Document.GetElementById("L003").SetAttribute("value", factura.cod_verificador);
+        //webBrowser1.Document.GetElementById("L003").Focus();
+        //SendKeys.Send("{TAB}");
+        //SendKeys.Flush();
+        //webBrowser1.Document.GetElementById("L6").SetAttribute("value", factura.direccion);
+        //webBrowser1.Document.GetElementById("L8").SetAttribute("value", factura.comuna);
+        //webBrowser1.Document.GetElementById("L28").SetAttribute("value", factura.cod_inf_tec);
+        //webBrowser1.Document.GetElementById("L28").Focus();
+        //SendKeys.Send("{TAB}");
+        //SendKeys.Flush();
+        //webBrowser1.Document.GetElementById("L33").SetAttribute("value", factura.numero_chasis);
+        //webBrowser1.Document.GetElementById("L20").SetAttribute("value", factura.tipo_docto);
+        //webBrowser1.Document.GetElementById("L21").SetAttribute("value", factura.rut_emisor_fac);
+        //webBrowser1.Document.GetElementById("L22").SetAttribute("value", factura.nro_factura.ToString ());
 
 
-            //webBrowser1.Document.GetElementById("L24").SetAttribute("value", factura.tipo_factura);
-            //webBrowser1.Document.GetElementById("L25").SetAttribute("value", factura.valor_neto.ToString());
-            //webBrowser1.Document.GetElementById("L26").SetAttribute("value", factura.valor_iva.ToString());
-            //webBrowser1.Document.GetElementById("L27").SetAttribute("value", factura.valor_total.ToString());
-            //webBrowser1.Document.GetElementById("Sii").InvokeMember("click");
 
-        }
+        //webBrowser1.Document.GetElementById("L23").SetAttribute("value", factura.fecha_emision_docto.ToString("dd-MM-yyyy"));
+
+
+        //webBrowser1.Document.GetElementById("L24").SetAttribute("value", factura.tipo_factura);
+        //webBrowser1.Document.GetElementById("L25").SetAttribute("value", factura.valor_neto.ToString());
+        //webBrowser1.Document.GetElementById("L26").SetAttribute("value", factura.valor_iva.ToString());
+        //webBrowser1.Document.GetElementById("L27").SetAttribute("value", factura.valor_total.ToString());
+        //webBrowser1.Document.GetElementById("Sii").InvokeMember("click");
+
+    }
         private bool IsNumeric(string Factura) {
             try {
                 int x = int.Parse(Factura);
@@ -178,5 +184,8 @@ namespace CargaTesoreria
 
           
         }
+
     }
+
+
 }
